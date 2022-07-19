@@ -8,11 +8,19 @@
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth
+}
+
 body {
     min-width: 290px;
     color: black;
     background-color: #ffffff;
     line-height: 1.5;
+}
+
+main {
+    margin-bottom: 2rem;
 }
 /*All header texts*/
 
@@ -54,7 +62,7 @@ ul {
     padding: 10px 10px;
 }
 
-a {
+#navbar a {
     display: block;
     color: black;
     background-color: #ffffff;
@@ -100,3 +108,61 @@ code {
     font-size: 14px;
     font-weight: 400;
 }
+ol #new-list {
+    list-style-type: circle;
+    margin-left: 3rem;
+    line-height: 2;
+}
+ol #new-list:last-of-type {
+    padding-bottom: 1rem;
+}
+span {
+    line-height: 3;
+}
+.mdn {
+    text-decoration: underline;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+  
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    #main-doc {
+      margin-left: -10px;
+    }
+  
+    code {
+      margin-left: -20px;
+      width: 100%;
+      padding: 15px;
+      padding-left: 10px;
+      padding-right: 45px;
+      min-width: 233px;
+    }
+  }
+  
