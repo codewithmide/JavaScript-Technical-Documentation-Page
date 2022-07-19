@@ -2,9 +2,61 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 body {
+    min-width: 290px;
+    color: black;
     background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    line-height: 1.5;
+}
+
+header {
+    color: black;
+    margin: 10px;
+    text-align: left;
+    font-size: 1.7em;
+    padding-bottom: .3rem;
+    padding-left: 1.2rem;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: black;
+}
+
+ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+.list {
+    font-size: 16px;
+    border-top: 1px solid black;
+    padding: 10px 10px;
+}
+
+a {
+    color: black;
+    background-color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+/* MAIN DOC */
+#main-doc {
+    width: auto;
+    margin-left: 300px;
 }
