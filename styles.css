@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Ubuntu+Mono&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,7 @@ body {
     background-color: #ffffff;
     line-height: 1.5;
 }
+/*All header texts*/
 
 header {
     color: black;
@@ -20,7 +23,10 @@ header {
     font-size: 1.7em;
     padding-bottom: .3rem;
     padding-left: 1.2rem;
+    text-transform: capitalize;
 }
+
+/*Side bar*/
 
 #navbar {
     position: fixed;
@@ -31,6 +37,7 @@ header {
     height: 100%;
     border-right: solid;
     border-color: black;
+    text-transform: capitalize;
 }
 
 ul {
@@ -48,15 +55,48 @@ ul {
 }
 
 a {
+    display: block;
     color: black;
     background-color: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    cursor: pointer;
 }
 
 /* MAIN DOC */
 #main-doc {
     width: auto;
     margin-left: 300px;
+}
+
+#main-doc header {
+    margin-top: 2rem;
+}
+
+#main-doc p {
+    margin-left: 3rem;
+    font-size: 15px;
+}
+
+#main-doc li {
+    list-style: disc;
+    margin-left: 6rem;
+    font-size: 15px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    font-family: 'Ubuntu Mono', monospace;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    background-color: #e4dcdc;
+    padding: 15px;
+    margin: 1rem 4rem 1rem 4rem;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
 }
